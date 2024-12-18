@@ -1,0 +1,53 @@
+market_analysis_task:
+  description: >
+    Conduct a comprehensive market analysis for {topic} covering:
+    1. Global market size and regional growth opportunities
+    2. Consumer behavior patterns and preferences
+    3. Price sensitivity analysis
+    4. Competitor landscape
+    5. Market entry barriers
+    Use the Global Furniture Market Database 2024 and Regional Consumer Behavior Surveys.
+  expected_output: >
+    A structured market analysis report containing:
+    - Market size and growth projections (global and by region)
+    - Key consumer trends with supporting data
+    - Competitive analysis matrix
+    - Price point recommendations
+    - Market opportunity score (1-10)
+    Formatted as markdown with data visualizations
+  agent: market_analyst
+
+technical_assessment_task:
+  description: >
+    Evaluate the technical aspects of {topic} focusing on:
+    1. Required manufacturing technologies
+    2. Material options and sustainability metrics
+    3. Production capability assessment
+    4. Environmental impact analysis
+    5. Supply chain requirements
+    Reference IKEA's existing production capabilities and sustainability goals.
+  expected_output: >
+    A technical feasibility report including:
+    - Manufacturing process recommendations
+    - Material specifications with sustainability scores
+    - Production capacity requirements
+    - Environmental impact assessment
+    - Technical complexity score (1-10)
+    Formatted as markdown with technical specifications
+  agent: tech_specialist
+
+feasibility_evaluation_task:
+  description: >
+    Perform a comprehensive feasibility assessment of {topic} using the weighted criteria:
+    - Market potential (40%): market_size, growth_rate, competition, price_sensitivity
+    - Technical feasibility (30%): manufacturing_complexity, material_availability, sustainability_score
+    - Resource requirements (30%): development_cost, production_setup, supply_chain_readiness
+  expected_output: >
+    A detailed feasibility report containing:
+    - Overall feasibility score (1-10)
+    - Breakdown of scores by category
+    - Risk assessment
+    - Opportunity analysis
+    - Final recommendation
+    Formatted as markdown with scoring matrix
+  agent: feasibility_assessor
